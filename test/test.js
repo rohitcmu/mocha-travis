@@ -38,13 +38,13 @@ describe('GET routes', () => {
 
   })
 
-  // describe('about', () => {
-  //   it('should be 200', (done) => {
-  //     request(app)
-  //       .get('/about')
-  //       .expect(200,done);
-  //   });
-  // });
+  describe('about', () => {
+    it('should be 200', (done) => {
+      request(app)
+        .get('/about')
+        .expect(200,done);
+    });
+  });
 
 });
 
@@ -63,7 +63,3 @@ describe('POST routes', () => {
     });
   });
 });
-
-
-
-
