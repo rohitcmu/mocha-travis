@@ -7,7 +7,8 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "nyc mocha",
-    "test:watch": "mocha -w"
+    "test:watch": "mocha -w",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
     "express",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.13.1",
     "mocha": "^3.4.1",
     "nyc": "^10.3.2",
     "supertest": "^3.0.0"
