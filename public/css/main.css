@@ -1,0 +1,45 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  background-color: #645264;
+  color: #fff;
+  font: 150%/1.5 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+img{
+  max-height: auto;
+  max-width: 100%;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0,0,0, 0.2);
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  text-align: left;
+  padding: 3rem;
+}
+
+.content > * {
+  flex: 1;
+}
+
+li{
+  padding: .5rem;
+}
+
+@media (max-width: 600px){
+  .content{
+    flex-direction: column;
+  }
+}

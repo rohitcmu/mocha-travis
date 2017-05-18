@@ -1,0 +1,31 @@
+{
+  "name": "express-mocha-supertest",
+  "version": "1.0.0",
+  "description": "Testing express with mocha and supertest",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "test:watch": "mocha -w"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "mocha",
+    "supertest"
+  ],
+  "author": "Jesper Orb",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "pug": "^2.0.0-beta.12"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1",
+    "nyc": "^10.3.2",
+    "supertest": "^3.0.0"
+  }
+}
